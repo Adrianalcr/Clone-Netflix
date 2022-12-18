@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Adriana Lima - Web Designer">
+        <meta name="description" content="Atividade de aprendizado">
+
+        <title>Clone da Netflix</title>
+
+        <!--Styles e icones-->
+        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="shortcut ico" href="/favicon.svg">
+
+    </head>
+<body>
+
+
+    <header class="header">
+        <img id="logo" src="imagens/netflix.svg" alt="Netflix" draggable="false"> <!--Fundo Header-->
+
+        <div class="dark-mode dark"><button style="background-color: transparent; color: white; border: transparent;" onclick="myFunction()"><i class="gg-sun"></i></button></div> <!--Acessibilidade-->
+
+        <div class="lang-selection-container"><!--Tradução-->
+            <div data-uia="language-picker+container" class="ui-select-wrapper" style="padding: 0; margin: 0 auto;">
+                <div class="select-arrow medium prefix globe">
+                    <i class="gg-globe-alt"></i>
+                    <select data-uia="language-picker" class="ui-select medium red" id="lang-switcher-select" tabindex="0" placeholder="lang-switcher"> 
+                        <option style="color:black;" selected="" lang="pt" value="/br/" data-language="pt" data-country="BR">Português</option>
+                        <option style="color:black;" lang="en" value="/br-en/" data-language="en" data-country="EN">English</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <a href="#">Entrar</a> <!--Botão-->
+
+    </header>
+
+    <main class="main">
+        <div class="main-child">
+            <h1>Filmes, séries e muito mais. Sem limites.</h1>
+            <span>Assista onde quiser. Cancele quando quiser.</span>
+            <p>Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura.</p>
+            <form class="form-flix">
+                <input type="text" placeholder="E-mail"/>
+                <button>Vamos lá</button>
+            </form>
+            <div class="gradient"></div>
+        </div>
+    </main>
+
+    <section class="section">
+        <div class="container">
+            <div class="grid"> 
+                <div>
+                    <h1>Aproveite na TV.</h1> 
+                    <p>Assista em Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, aparelhos de Blu-ray e outros dispositivos.</p>
+                </div>
+                <div class="img-tv">
+                    <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" alt="TV">
+                    <video class="video-tv" autoplay playsinline muted loop>
+                        <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="download section">
+        <div class="container">
+            <div class="grid"> 
+                <div>
+                    <h1>Baixe séries para assistir offline.</h1> 
+                    <p>Salve seus títulos favoritos e sempre tenha algo para assistir.</p>
+                </div>
+                <div class="img-tv">
+                    <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg" alt="El">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="device-pile section">
+        <div class="container">
+            <div class="grid"> 
+                <div>
+                    <h1>Assista quando quiser.</h1> 
+                    <p>Assista no celular, tablet, Smart TV ou notebook sem pagar a mais por isso.</p>
+                </div>
+                <div class="img-tv">
+                    <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile.png" alt="Device Pile">
+                    <video class="video-tv" autoplay playsinline muted loop>
+                        <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices.m4v" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="kids section">
+        <div class="container">
+            <div class="grid"> 
+                <div>
+                    <h1>Crie perfis para crianças.</h1> 
+                    <p>Deixe as crianças se aventurarem com seus personagens favoritos em um espaço feito só para elas, sem pagar a mais por isso.</p>
+                </div>
+                <div class="img-tv">
+                    <img src="https://occ-0-2328-3852.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABUb4fcnETtielPJer_ORwZ2iUanycANl37cr81zDaXC9Fmg9c42ofxt0yxetNltG2xUMgf2Aqimz_q1Nsv-38Ng_EjIc.png?r=1b8" alt="TV">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq section">
+        <div class="container">
+            <h1>Perguntas frequentes</h1>
+
+            <button class="accordion"><h3>O que é a Netflix?</h3></button>
+            <div class="panel">
+                <p>A Netflix é um serviço de transmissão online que oferece uma ampla variedade de séries, filmes e documentários premiados em milhares de aparelhos conectados à internet.</p>
+                <p>Você pode assistir a quantos filmes e séries quiser, quando e onde quiser, sem comerciais – tudo por um preço mensal bem acessível. Aqui você sempre encontra novidades. A cada semana, adicionamos novas séries e filmes.</p>
+            </div>
+            
+            <button class="accordion"><h3>Quanto custa a Netflix?</h3></button>
+            <div class="panel">
+                <p>Assista à Netflix no seu celular, tablet, Smart TV, notebook ou aparelho de streaming por uma taxa mensal única. Os planos variam de R$21,90 a R$45,90 por mês. Sem contrato nem taxas extras.</p>
+            </div>
+        
+            <button class="accordion"><h3>Onde posso assistir?</h3></button>
+            <div class="panel">
+                <p>Assista onde quiser, o quanto quiser e em um número ilimitado de aparelhos. Faça login com sua conta Netflix em netflix.com para começar a assistir no computador ou em qualquer aparelho conectado à Internet compatível com o aplicativo Netflix, como Smart TVs, smartphones, tablets, aparelhos de streaming e videogames.</p>
+                <p>Você também pode baixar a sua série favorita com o aplicativo Netflix para iOS, Android ou Windows 10. Use downloads para levar a Netflix para onde quiser sem precisar de conexão com a Internet. Leve a Netflix com você para qualquer lugar.</p>
+            </div>
+
+            <button class="accordion"><h3>Como faço para cancelar?</h3></button>
+            <div class="panel">
+                <p>A Netflix é flexível. Não há contratos nem compromissos. Você pode cancelar a sua conta na internet com apenas dois cliques. Não há taxa de cancelamento – você pode começar ou encerrar a sua assinatura a qualquer momento.</p>
+            </div>
+
+            <button class="accordion"><h3>O que eu posso assistir na Netflix?</h3></button>
+            <div class="panel">
+                <p>A Netflix tem um grande catálogo de filmes, documentários, séries, originais Netflix premiados e muito mais. Assista o quanto quiser, quando quiser.</p>
+            </div>
+
+            <button class="accordion"><h3>A Netflix é adequada para criança?</h3></button>
+            <div class="panel">
+                <p>Assista onde quiser, o quanto quiser e em um número ilimitado de aparelhos. Faça login com sua conta Netflix em netflix.com para começar a assistir no computador ou em qualquer aparelho conectado à Internet compatível com o aplicativo Netflix, como Smart TVs, smartphones, tablets, aparelhos de streaming e videogames.</p>
+                <p>Você também pode baixar a sua série favorita com o aplicativo Netflix para iOS, Android ou Windows 10. Use downloads para levar a Netflix para onde quiser sem precisar de conexão com a Internet. Leve a Netflix com você para qualquer lugar.</p>
+            </div>
+
+        <div class="form-faq"> 
+            <p>Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura.</p>
+            
+            <form class="form-flix">
+                <input type="text" placeholder="E-mail"/>
+                <button>Vamos lá</button>
+            </form>
+        </div>       
+    </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <p class="footer-top">Dúvidas? Ligue <a class="footer-top-a" href="tel:0800-000-0000">0800-000-0000</a></p>
+                <div class="column">
+                    <a href="#"><p>Perguntas frequentes</p></a>
+                    <a href="#"><p>Relações com investidores</p></a>
+                    <a href="#"><p>Formas de assistir</p></a>
+                    <a href="#"><p>Informações corporativas</p></a>
+                    <a href="#"><p> Originais Netflix</p></a>
+                </div>
+
+                <div class="column">
+                    <a href="#"><p>Centro de ajuda</p></a>
+                    <a href="#"><p>Carreiras</p></a>
+                    <a href="#"><p>Termos de uso</p></a>
+                    <a href="#"><p>Entre em contato</p></a>
+                </div>
+
+                <div class="column">
+                    <a href="#"><p>Conta</p></a>
+                    <a href="#"><p>Resgatar cartão pré-pago</p></a>
+                    <a href="#"><p>Privacidade</p></a>
+                    <a href="#"><p>Teste de velocidade</p></a>
+                </div>
+
+                <div class="column">
+                    <a href="#"><p>Imprensa</p></a>
+                    <a href="#"><p>Comprar cartão pré-pago</p></a>
+                    <a href="#"><p>Preferências de cookies</p></a>
+                    <a href="#"><p>Avisos legais</p></a>
+                </div>
+
+                <div class="lang-selection-container" style="width: 200px;">
+                    <div data-uia="language-picker+container" class="ui-select-wrapper">
+                        <div class="select-arrow medium prefix globe">
+                            <i class="gg-globe-alt"></i>
+                            <select data-uia="language-picker" class="ui-select medium" id="lang-switcher-select" tabindex="0" placeholder="lang-switcher"> 
+                                <option style="color:black;" selected="" lang="pt" value="/br/" data-language="pt" data-country="BR">Português</option>
+                                <option style="color:black;" lang="en" value="/br-en/" data-language="en" data-country="BR">English</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <p>Copyright © 2020 Netflix Brasil - Todos os direitos reservados. (Não é o site oficial - Somente para estudos) | Por: <a href="https://www.ilhawebdesign.com.br">Adriana Lima</a></p>
+            
+            </div> 
+        </div>
+    </footer>
+
+    <!--Scripts by Adriana Lima-->
+    <script src="js/faq.js"></script>
+    <script src="js/dark-mode.js"></script>
+
+</body>
+</html>

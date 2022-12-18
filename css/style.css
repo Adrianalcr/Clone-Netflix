@@ -1,0 +1,658 @@
+/** 
+* Author: Adriana Lima
+* Url: https:://www.ilhawebdesign.com.br
+* Github: https://github.com/Adrianalcr
+**/
+
+/**************************************************************/
+/*-------Acessibilidade(Modo Dark e White)------*/
+body.dark-mode {
+    background: white;
+    color: rgb(46, 46, 46);
+}
+.footer.dark-mode{
+    background:white;
+    color: rgb(46, 46, 46);
+}
+
+/****Fim controle*****/
+
+/*****Icone********/
+
+.gg-sun{
+    transition: all var(--cubic);
+    display: flex;
+    width: 4rem;
+    height: 4rem;
+    justify-content: center;
+    align-items: right;
+    transform: rotate(0);
+    cursor: pointer;
+
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 24px;
+    height: 24px;
+    background:
+    linear-gradient(to bottom,
+    currentColor 4px,transparent 0)
+    no-repeat 5px -6px/2px 6px,
+    linear-gradient(to bottom,
+    currentColor 4px,transparent 0)
+    no-repeat 5px 14px/2px 6px,
+    linear-gradient(to bottom,
+    currentColor 4px,transparent 0)
+    no-repeat -8px 5px/6px 2px,
+    linear-gradient(to bottom,
+    currentColor 4px,transparent 0)
+    no-repeat 14px 5px/6px 2px;
+    border-radius: 100px;
+    box-shadow: inset 0 0 0 2px;
+    border: 6px solid transparent;
+}
+   
+.gg-sun::after,
+.gg-sun::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    border-right: 4px solid;
+    border-left: 4px solid;
+    left: -6px;
+    top: 5px;
+}
+   
+.gg-sun::before {
+    transform: rotate(-45deg);
+}
+   
+.gg-sun::after {
+    transform: rotate(45deg);
+} 
+
+
+/*************************************************************/
+*{
+    margin: 0;
+    padding: 0;
+  
+}
+
+body{
+    font-family: sans-serif;
+    background: black;
+    color: white;
+    width: 100%;
+    overflow-x: hidden;
+
+    
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+
+.container{
+    max-width: 100%;
+    margin: 0 auto;
+    width: 1130px;
+}
+
+
+header{
+    position: absolute;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    top:  28px;
+    left: 56px;
+    right: 50px;
+    max-width: 100%;
+    align-items: flex-start;
+    padding: 0px 0px 0px;
+    margin: 0 56px;
+
+}
+
+header a{
+    display: inline-block;
+    background: #a50914;
+    color: white;
+    align-self: flex-start;
+    padding: 8px 18px;
+    margin: 0;
+    text-decoration: none;
+    border-radius: 3px;
+    z-index: 1;
+    max-width: 100%;
+}
+
+header a:hover{
+    background: #F40612;
+}
+
+main{
+    padding-top: 4rem;
+    height: 785px;
+    background: url("https://assets.nflxext.com/ffe/siteui/vlv3/c0a32732-b033-43b3-be2a-8fee037a6146/07eca1c3-6efc-48cc-8880-5c9d7253ac8e/BR-pt-20210607-popsignuptwoweeks-perspective_alpha_website_small.jpg") center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+.main-child{
+    z-index: 10;
+    display: grid;
+    justify-items: center;
+    max-width: 100%;
+    
+}
+
+main h1{
+    font-size: 60px;
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+    z-index: 11;
+    line-height: 1.1;
+    width: 640px;
+    color: white;
+
+}
+
+main span{
+    font-size: 26px;
+    margin-top: 10px;
+    z-index: 1;
+    max-width: 100%;
+    color: white;
+
+}
+
+main p{
+    font-size: 19px;
+    padding-top: 3rem;
+    z-index: 1;
+    width: 100%;
+    color: white;
+}
+
+.form-flix{
+    display: grid;
+    grid-template-columns: 450px 250px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    z-index: 1;
+    width: 100%;
+}
+
+.form-flix input{
+    padding: 20px 10px;
+    font-size: 18px;
+    font-family: sans-serif;
+    z-index: 11;
+    width: 100%;
+}
+
+.form-flix button{
+    background: #a50914;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 11;
+    width: 100%;
+}
+
+.form-flix button::after{
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 20px;
+    background: url("../imagens/seta.svg");
+    margin-left: 20px;
+    z-index: 11;
+}
+
+.form-flix button:hover{
+    background: #F40612;
+}
+
+
+.gradient{
+    background: rgba(0,0,0,.4);
+    background-image: linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    
+}
+
+section{
+    padding: 3rem 0;
+    border-top: 8px solid #222;
+    
+}
+
+section h1{
+    font-size: 50px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+section p{
+    font-size: 26px;
+    width: 100%;
+}
+
+
+.grid{
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    align-items: center;
+}
+
+.img-tv{
+    position: relative;
+    width: 100%;
+}
+
+.img-tv img{
+    position: relative;
+    z-index: 2;
+}
+
+.video-tv{
+    position: absolute;
+    top: 80px;
+    left: 70px;
+    width: 400px;
+    max-width: 100% !important;
+    
+}
+
+.download .grid > div:first-child {
+    order: 2;
+} 
+
+.download .img-tv {
+    order: 1;
+} 
+
+.device-pile .video-tv{
+    width: 340px;
+    top: 40px;
+    left: 100px;
+}
+
+.kids .img-tv{
+    order: 1;
+}
+
+.kids .grid > div:first-child{
+    order: 2;
+}
+
+/**********FAQ SECTION***********/
+.faq .accordion {
+    background: rgb(48, 48, 48);
+    border-top-color: 1px solid #000;
+    color: #444;
+    cursor: pointer;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+    font-size: 1.625rem;
+    font-weight: 400;
+    padding: 1em 1.2em 1em 1.2em;
+    position: relative;
+    width: 100%;
+    list-style-type: none;
+    margin: 0px 0px 4px;
+    display: inline-block;
+    margin-bottom: -9px;
+}
+
+.faq h3{
+    color: white;
+    font-size: 1.625rem;
+    font-weight: 400;
+}
+
+.faq  .active, .accordion:hover {
+    background-color: rgb(54, 54, 54);
+}
+  
+.faq  .accordion:after {
+    content: '\002B';
+    color: white;
+    float: right;
+    margin-left: 5px;
+    font-weight: 400;
+    font-size: 60px;
+    position: absolute;
+    right: 1em;
+    top: 50%;
+    top: auto;
+    bottom: 0;
+    padding: auto;
+}
+  
+.faq  .active:after {
+    content: "\2212";
+}
+  
+.faq  .panel {
+    margin-top: 0;
+    padding: 0 48px;
+    background-color: #303030;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    list-style-type: none;
+    font-size: 1.625rem;
+    font-weight: 400;
+    display: inline-block;
+}
+
+
+.faq .container{
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.faq .h1{
+    text-align: center;
+    font-size: 3.125rem;
+    line-height: 1.1;
+    margin-bottom: .5rem;
+}
+
+.faq .form-flix{
+    margin-top: 0;
+    text-align: center;
+    font-size: 3.125rem;
+    width: 100%;
+}
+
+
+.faq p{
+    padding: 0 0 4px;
+    text-align: left;
+    margin-top: 4rem;
+    font-size: 1.625rem;
+    font-weight: 400;
+    padding-bottom: 2em;
+    color: white;
+
+}
+.faq .form-faq p{
+    font-weight: 400;
+    text-align: center;
+    font-size: 19.2px;
+}
+
+/****************FOOTER*************/
+.footer{
+    background: black;
+    text-align: left;
+    border-top: 8px solid #222;
+    padding: 4rem 0 2rem 0;
+    display: grid;
+    justify-items: left;
+    min-width: 190px;
+    width: 100%;
+    padding-bottom: 20px;
+    font-size: 1em;
+    color: rgb(117, 117, 117);
+    position: relative;
+
+
+}
+footer .footer-top{
+    padding: 0px;
+    margin: 0px 0px 30px;
+    font-size: 1em;
+    color: rgb(117, 117, 117);
+}
+
+footer .footer-top-a{
+    margin-top: 2rem;
+    color: #757575;
+    font-size: 15px;
+    font-weight: 400;
+
+}
+
+footer .footer-top p{
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+footer p{
+    margin-top: 2rem;
+    color: #757575;
+    font-size: 13px;
+    text-align: left;
+    cursor: pointer;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+
+}
+
+footer a{
+    margin-top: 2rem;
+    color: #757575;
+    font-size: 13px;
+    padding: 0;
+    text-align: left;
+    cursor: pointer;
+    
+}
+
+footer .row{
+    margin: 1rem;
+    padding: 1rem;
+}
+
+footer .column {
+    width: 25%;
+    padding: 5px;
+    display: inline-block;
+    padding: 1em;
+}
+  
+footer  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*******Tradução Rodapé*********************/
+footer .lang-selection-container{
+    margin-top: 20px;
+    text-align: right;
+}
+
+footer .lang-selection-container .ui-select-wrapper .select-arrow.prefix .ui-select.medium {
+    text-indent: 0;
+    padding-right: 26px;
+    background: rgba(44, 44, 44, 0);
+    color: white;
+    padding: 18px 28px;
+    
+}
+footer .ui-select-wrapper .select-arrow.prefix .ui-select.medium {
+    line-height: 1.7;
+}
+footer .ui-select-wrapper .ui-select {
+    border: 1px solid #333;
+    font-size: 16px;
+    border-radius: 2px;
+    width: 100%;
+}
+
+footer .lang-selection-container .language-picker .option {
+    font-weight: normal;
+    display: block;
+    white-space: nowrap;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+    background: #000;
+}
+
+/*******Tradução Header*********************/
+header .lang-selection-container{
+    background: rgba(0,0,0,.4);
+    border: 1px solid #aaa;
+    border-radius: 2px;
+    color: #fff;
+    font-size: .875rem;
+    
+}
+
+header .lang-selection-container .ui-select-wrapper .select-arrow.prefix .ui-select.medium {
+    text-indent: 0;
+    padding-right: 26px;
+    background: rgba(44, 44, 44, 0);
+    color: white;
+    padding: 8px 22px;
+    
+}
+header .ui-select-wrapper .select-arrow.prefix .ui-select.medium {
+    line-height: 1.7;
+    
+}
+header .ui-select-wrapper .ui-select {
+    border: 1px solid #333;
+    font-size: 16px;
+    border-radius: 2px;
+    width: 100%;
+    background:rgba(0,0,0,.4);
+}
+
+header .lang-selection-container .language-picker .option {
+    font-weight: normal;
+    display: block;
+    white-space: nowrap;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+    background: #000;
+}
+
+/*-----Icone Globo--------*/
+.gg-globe-alt,
+.gg-globe-alt::after,
+.gg-globe-alt::before {
+ display: block;
+ box-sizing: border-box;
+ height: 18px;
+ border: 2px solid;
+}
+
+.gg-globe-alt {
+ position: absolute;
+ transform: scale(var(--ggs,1));
+ width: 18px;
+ border-radius: 22px;
+}
+
+.gg-globe-alt::after,
+.gg-globe-alt::before {
+ content: "";
+ position: absolute;
+ width: 8px;
+ border-radius: 100%;
+ top: -2px;
+ left: 3px
+}
+
+.gg-globe-alt::after {
+ width: 24px;
+ height: 20px;
+ border: 2px solid transparent;
+ border-bottom: 2px solid;
+ top: -11px;
+ left: -5px
+} 
+
+
+
+/************ Responsive layout *********************/
+@media screen and (max-width: 600px) {
+    footer .column {
+      width: 100%;
+    }
+}
+
+@media only screen and (min-width: 550px) and (max-width: 949px) and (orientation: portrait), only screen and (min-width: 400px) and (max-width: 549px), only screen and (min-width: 350px) and (max-width: 399px), only screen and (max-width: 349px){
+    .gradient {
+        background-image: linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 40%,rgba(0,0,0,0) 75%,rgba(0,0,0,.8) 100%);
+        width: 100%;
+    }
+    
+    .container .form-flix button {
+        padding: 0;
+        margin-top: 0;
+    }
+}
+
+
+@media only screen and (min-width: 400px) and (max-width: 549px), only screen and (min-width: 350px) and (max-width: 399px), only screen and (max-width: 349px){
+    .grid {
+        font-size: 1.125rem;
+    }
+}
+
+
+@media only screen and (min-width: 550px) and (max-width: 949px), only screen and (min-width: 950px) and (max-width: 1449px), only screen and (min-width: 1450px){
+    .faq {
+        padding: 70px 250px;
+    }
+    .faq .form-flix{
+        padding: 50px 50px;
+        text-align: center;
+        width: 100%;
+    }
+    .faq .accordion:after{
+        top: auto;
+        bottom: 0;
+    }
+    
+}
+
+
+@media only screen and (min-width: 950px) and (max-width: 1449px), only screen and (min-width: 1450px){
+    .faq .accordion .panel .button {
+    width: 75%;
+    margin: 2em auto;
+    }
+}
+
+
